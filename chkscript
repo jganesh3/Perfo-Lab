@@ -1,0 +1,18 @@
+echo "Testing Gauss filter"
+
+
+python picturediff.py  filtered-gauss-boats.bmp   ./originalFilterout/filtered-gauss-boats.bmp
+python picturediff.py  filtered-gauss-blocks-small.bmp  ./originalFilterout/filtered-gauss-blocks-small.bmp
+
+echo "Testing avg filter"
+python picturediff.py  filtered-avg-boats.bmp  ./originalFilterout/filtered-avg-boats.bmp
+python picturediff.py  filtered-avg-blocks-small.bmp  ./originalFilterout/filtered-avg-blocks-small.bmp
+
+echo "Testing hline filter"
+python picturediff.py  filtered-hline-boats.bmp  ./originalFilterout/filtered-hline-boats.bmp
+python picturediff.py  filtered-hline-blocks-small.bmp  ./originalFilterout/filtered-hline-blocks-small.bmp
+
+echo "Testing emboss filter"
+python picturediff.py  filtered-emboss-boats.bmp  ./originalFilterout/filtered-emboss-boats.bmp
+python picturediff.py  filtered-emboss-blocks-small.bmp  ./originalFilterout/filtered-emboss-blocks-small.bmp
+
